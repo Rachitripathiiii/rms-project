@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jobs | RMS</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f4f4f4;
+}
+
+/* Navbar (same style as homepage) */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #1e1e2f;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  margin:0 15px;
+}
+
+/* Page Header */
+.header{
+  margin-top:80px;
+  text-align:center;
+  padding:40px;
+  background:#2b2b52;
+  color:white;
+}
+
+/* Job cards container */
+.jobs{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:40px;
+  flex-wrap:wrap;
+}
+
+/* Job Card */
+.card{
+  background:white;
+  width:300px;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0px 2px 10px rgba(0,0,0,0.1);
+  text-align:center;
+}
+
+.card h3{
+  color:#2b2b52;
+}
+
+.btn{
+  padding:10px 20px;
+  border:none;
+  background:#ffcc00;
+  color:black;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.btn:hover {
+  background: #e6e6e6;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+/* Footer */
+.footer{
+  background:#1e1e2f;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+.back-btn{
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  background: white;
+  color: #2b2b52;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-btn:hover{
+  background: #ffcc00;
+}
+.back-btn{
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  background: white;
+  color: #2b2b52;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.back-btn:hover{
+  background: #ffcc00;
+  color: black;
+  transform: scale(1.05);
+}
+
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <div class="logo">RMS | Recruitment Management System</div>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="apply.html">Apply</a>
+    <a href="#">Admin</a>
+  </div>
+</div>
+
+<!-- Page Header -->
+<div class="header">
+  <h1>Available Job Openings</h1>
+  <p>Find the best opportunities and apply in one click.</p>
+
+  <button class="back-btn" onclick="history.back()">
+    ← Go Back
+  </button>
+</div>
+
+
+<!-- Job Listings -->
+<div class="jobs">
+
+  <div class="card">
+    <h3>Software Intern</h3>
+    <p>Company: Tech Solutions</p>
+    <p>Location: Remote</p>
+    <p>Stipend: ₹15,000/month</p>
+    <button class="btn" onclick="location.href='apply.html'">Apply Now</button>
+  </div>
+
+  <div class="card">
+    <h3>Web Developer</h3>
+    <p>Company: Innovate Labs</p>
+    <p>Location: Bangalore</p>
+    <p>Salary: ₹5 LPA</p>
+    <button class="btn" onclick="location.href='apply.html'">Apply Now</button>
+  </div>
+
+  <div class="card">
+    <h3>Data Analyst</h3>
+    <p>Company: DataWorks</p>
+    <p>Location: Pune</p>
+    <p>Salary: ₹6 LPA</p>
+    <button class="btn" onclick="location.href='apply.html'">Apply Now</button>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <p>© 2026 Recruitment Management System</p>
+  <p>Email: rms.team@gmail.com</p>
+</div>
+
+</body>
+</html>

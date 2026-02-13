@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recruitment Management System</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    /* ---------- NAVBAR ---------- */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #1e1e2f;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    /* ---------- HERO SECTION ---------- */
+    .hero {
+      text-align: center;
+      padding: 160px 20px 100px;
+      background: linear-gradient(to right, #2b2b52, #4a4a8a);
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: #ffcc00;
+      color: black;
+    }
+
+    .btn-secondary {
+      background: white;
+      color: black;
+    }
+
+    /* ---------- ABOUT SECTION ---------- */
+    .about {
+      padding: 60px 40px;
+      text-align: center;
+      background: white;
+    }
+
+    .about ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .about li {
+      margin: 10px 0;
+      font-weight: bold;
+    }
+
+    /* ---------- FEATURES SECTION ---------- */
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 60px 40px;
+      background: #eef1ff;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      width: 280px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #2b2b52;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .footer {
+      background: #1e1e2f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    .btn-primary:hover {
+  background: #ffd633;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #e6e6e6;
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+
+  </style>
+</head>
+
+<body>
+
+<!-- 🔹 SECTION 1 — NAVBAR -->
+<div class="navbar">
+  <div class="logo">RMS | Recruitment Management System</div>
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="APPLY.HTML">Apply</a>
+    <a href="#">Admin</a>
+  </div>
+</div>
+
+<!-- 🔹 SECTION 2 — HERO -->
+<div class="hero">
+  <h1>Recruitment Management System</h1>
+  <p>Connect. Apply. Get Hired.</p>
+
+  <button class="btn btn-primary" onclick="location.href='jobs.html'">
+    View Jobs
+  </button>
+
+  <button class="btn btn-secondary" onclick="location.href='apply.html'">
+    Apply Now
+  </button>
+</div>
+
+<!-- 🔹 SECTION 3 — ABOUT -->
+<div class="about">
+  <h2>About the Platform</h2>
+  <p>
+    Our Recruitment Management System helps students find internships and jobs easily,  
+    while enabling recruiters to manage applications efficiently in one centralized dashboard.
+  </p>
+
+  <ul>
+    <li>✔ Easy to use</li>
+    <li>✔ Student-friendly</li>
+    <li>✔ Centralized job platform</li>
+  </ul>
+</div>
+
+<!-- 🔹 SECTION 4 — FEATURES -->
+<div class="features">
+
+  <div class="card">
+    <h3>For Students</h3>
+    <p>Browse jobs easily</p>
+    <p>Apply in one click</p>
+  </div>
+
+  <div class="card">
+    <h3>For Recruiters</h3>
+    <p>View applications in one place</p>
+    <p>Track candidate status</p>
+  </div>
+
+  <div class="card">
+    <h3>Simple & Fast</h3>
+    <p>No complicated login</p>
+    <p>Works on laptop and mobile</p>
+  </div>
+
+</div>
+
+<!-- 🔹 SECTION 5 — FOOTER -->
+<div class="footer">
+  <p>© 2026 Recruitment Management System</p>
+  <p>Team: FOREARMS </p>
+  <p>Email: rms.team@gmail.com</p>
+</div>
+
+</body>
+</html>
